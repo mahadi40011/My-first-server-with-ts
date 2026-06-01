@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "brand": "Logitech",
+    "price": 1200,
+    "stock": 45,
+    "rating": 4.5,
+    "discount": 10,
+    "isAvailable": true
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "category": "Electronics",
+    "brand": "Redragon",
+    "price": 3500,
+    "stock": 20,
+    "rating": 4.7,
+    "discount": 15,
+    "isAvailable": true
+  },
+  {
+    "id": 3,
+    "name": "Gaming Headset",
+    "category": "Accessories",
+    "brand": "Havit",
+    "price": 2200,
+    "stock": 12,
+    "rating": 4.3,
+    "discount": 5,
+    "isAvailable": true
+  },
+  {
+    "id": 4,
+    "name": "USB-C Charger",
+    "category": "Accessories",
+    "brand": "Anker",
+    "price": 1800,
+    "stock": 0,
+    "rating": 4.8,
+    "discount": 20,
+    "isAvailable": false
+  },
+  {
+    "id": 5,
+    "name": "Smart Watch",
+    "category": "Wearable",
+    "brand": "Xiaomi",
+    "price": 5500,
+    "stock": 30,
+    "rating": 4.4,
+    "discount": 12,
+    "isAvailable": true
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "category": "Audio",
+    "brand": "JBL",
+    "price": 4000,
+    "stock": 18,
+    "rating": 4.6,
+    "discount": 8,
+    "isAvailable": true
+  },
+  {
+    "id": 7,
+    "name": "Laptop Stand",
+    "category": "Office",
+    "brand": "Ugreen",
+    "price": 1500,
+    "stock": 25,
+    "rating": 4.2,
+    "discount": 0,
+    "isAvailable": true
+  },
+  {
+    "id": 8,
+    "name": "External SSD 512GB",
+    "category": "Storage",
+    "brand": "Samsung",
+    "price": 7500,
+    "stock": 10,
+    "rating": 4.9,
+    "discount": 10,
+    "isAvailable": true
+  },
+  {
+    "id": 9,
+    "name": "Webcam HD",
+    "category": "Electronics",
+    "brand": "A4Tech",
+    "price": 2800,
+    "stock": 8,
+    "rating": 4.1,
+    "discount": 5,
+    "isAvailable": true
+  },
+  {
+    "id": 10,
+    "name": "Power Bank 20000mAh",
+    "category": "Accessories",
+    "brand": "Baseus",
+    "price": 3200,
+    "stock": 15,
+    "rating": 4.7,
+    "discount": 18,
+    "isAvailable": true
+  }
+]
