@@ -111,13 +111,13 @@
   },
   {
     "id": 1780329456521,
-    "name": "Wireless Mouse",
+    "name": "Wireless charger",
     "category": "Electronics",
-    "brand": "Logitech",
-    "price": 1200,
-    "stock": 45,
+    "brand": "honor",
+    "price": 1000,
+    "stock": 20,
     "rating": 4.5,
-    "discount": 10,
+    "discount": 20,
     "isAvailable": true
   }
 ]

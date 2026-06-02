@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from "http";
 import { insertProduct, readProducts } from "../service/product.service";
-import type { product } from "../types/product.type";
+import type { Product } from "../types/product.type";
 import { parseBody } from "../utility/parseBody";
 
 export const productController = async (
@@ -29,7 +29,7 @@ export const productController = async (
 
   // get single product
   else if (method === "GET" && id !== null) {
-    const product = products.find((p: product) => p.id === id);
+    const product = products.find((p: Product) => p.id === id);
 
     res.writeHead(200, { "content-type": "application/json" });
     res.end(
@@ -56,6 +56,34 @@ export const productController = async (
       JSON.stringify({
         message: "Product Created Successfully ",
         data: newProduct,
+      }),
+    );
+  }
+
+  // Update a product by PUT method
+  else if (method === "PUT" && id !== null) {
+    const body = await parseBody(req);
+
+    const index = products.findIndex((p: Product) => p.id === id);
+
+    if (index < 0) {
+      res.writeHead(404, { "content-type": "application/json" });
+      res.end(
+        JSON.stringify({
+          message: "Product not found! ",
+          data: null,
+        }),
+      );
+    }
+
+    products[index] = { id: products[index].id, ...body };
+    insertProduct(products);
+
+    res.writeHead(200, { "content-type": "application/json" });
+    res.end(
+      JSON.stringify({
+        message: "Product updated Successfully ",
+        data: products[index],
       }),
     );
   }
