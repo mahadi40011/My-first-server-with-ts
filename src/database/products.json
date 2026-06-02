@@ -108,16 +108,5 @@
     "rating": 4.7,
     "discount": 18,
     "isAvailable": true
-  },
-  {
-    "id": 1780329456521,
-    "name": "Wireless charger",
-    "category": "Electronics",
-    "brand": "honor",
-    "price": 1000,
-    "stock": 20,
-    "rating": 4.5,
-    "discount": 20,
-    "isAvailable": true
   }
 ]
