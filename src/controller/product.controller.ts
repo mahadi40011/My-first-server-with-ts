@@ -33,10 +33,10 @@ export const productController = async (
 
     if (!product) {
       res.writeHead(404, { "content-type": "application/json" });
-      res.end(
+      return res.end(
         JSON.stringify({
           message: "Product not found",
-          data: null
+          data: null,
         }),
       );
     }
@@ -78,7 +78,7 @@ export const productController = async (
 
     if (index < 0) {
       res.writeHead(404, { "content-type": "application/json" });
-      res.end(
+      return res.end(
         JSON.stringify({
           message: "Product not found! ",
           data: null,
@@ -104,7 +104,9 @@ export const productController = async (
 
     if (index < 0) {
       res.writeHead(404, { "content-type": "application/json" });
-      res.end(JSON.stringify({ message: "Product not found!", data: null }));
+      return res.end(
+        JSON.stringify({ message: "Product not found!", data: null }),
+      );
     }
 
     products.splice(index, 1);
